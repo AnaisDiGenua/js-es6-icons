@@ -129,8 +129,9 @@ card.forEach((element) => {
     container.innerHTML += 
     `
     <div class="card">
-            <i class="${element.family} ${element.prefix + element.name}"></i>
+            <i class="${element.family} ${element.prefix + element.name} ${element.color}"></i>
             <p>${element.name}</p>
     </div>
     `;
+
 });
