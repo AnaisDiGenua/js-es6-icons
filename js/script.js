@@ -118,3 +118,19 @@ const card = [
 		color: 'blue'
 	}
 ];
+
+
+
+
+// ciclo per stampare le card dinamicamente
+card.forEach((element) => {
+    const container = document.querySelector('.icons-container');
+
+    container.innerHTML += 
+    `
+    <div class="card">
+            <i class="${element.family} ${element.prefix + element.name}"></i>
+            <p>${element.name}</p>
+    </div>
+    `;
+});
